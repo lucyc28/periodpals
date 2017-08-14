@@ -1,0 +1,171 @@
+/* {
+    border: 1px solid red !important;
+}*/
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.grid {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.row {
+    width: 100%;
+    margin: 20px;
+    display: flex; flex-wrap: wrap;
+}
+
+.col-1 {
+    width: 8.33%;
+}
+.col-2 {
+    width:16.66%;
+}
+.col-3 {
+    width:25%;
+}
+.col-4 {
+    width:33.33%;
+}
+.col-5 {
+    width:41.66%;
+}
+.col-6 {
+    width:50%;
+}
+.col-7 {
+    width:58.33%;
+}
+.col-8 {
+    width:66.66%;
+}
+.col-9 {
+    width:75%;
+}
+.col-10 {
+    width:83.33%;
+}
+.col-11 {
+    width:91.66%;
+}
+.col-12 {
+    width:100%;
+}
+
+body {
+  background-image: url("Lucy_Background.jpg");
+  background-size:  cover;
+  background-position: left top;
+  color: white
+}
+
+div.tab {
+    overflow: hidden;
+    background-color: #FFDAB9;
+}
+
+/* Style the buttons inside the tab */
+div.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+    background-color: #DA70D6;
+}
+
+/* Create an active/current tablink class */
+div.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+ul {list-style-type: none;}
+body {font-family: Verdana, sans-serif;}
+
+/* Month header */
+.month {
+    padding: 70px 25px;
+    width: 100%;
+    background: #FFC0CB;
+}
+
+/* Month list */
+.month ul {
+    margin: 0;
+    padding: 0;
+}
+
+.month ul li {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+/* Previous button inside month header */
+.month .prev {
+    float: left;
+    padding-top: 10px;
+}
+
+/* Next button */
+.month .next {
+    float: right;
+    padding-top: 10px;
+}
+
+/* Weekdays (Mon-Sun) */
+.weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color:#ddd;
+}
+
+.weekdays li {
+    display: inline-block;
+    width: 13.6%;
+    color: #666;
+    text-align: center;
+}
+
+/* Days (1-31) */
+.days {
+    padding: 10px 0;
+    background: #eee;
+    margin: 0;
+}
+
+.days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size:12px;
+    color:#777;
+}
+
+/* Highlight the "current" day */
+.days li .active {
+    padding: 5px;
+    background: #1abc9c;
+    color: white !important
+}

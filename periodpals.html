@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>.Pals</title>
+    <link href="periodpalsgrid.css" rel="stylesheet" type="text/css">
+    <script src="periodpals.js"> </script>
+    <center> <img src="Logo.png" style="width:400;height:160px;"> </center>
+  </head>
+  <body>
+    <div class="tab">
+      <button class="tablinks" onclick="openTab('MyTracker')"id="defaultOpen">MyTracker</button>
+      <button class="tablinks" onclick="openTab('MyPals')">MyPals</button>
+      <button class="tablinks" onclick="openTab('MyGroups')">MyGroups</button>
+    </div>
+
+    <div id="MyTracker" class="tabcontent">
+      <h1>My Tracker</h1>
+        <div class="month">
+          <ul>
+            <li class="prev">&#10094;</li>
+            <li class="next">&#10095;</li>
+            <li>
+              August<br>
+              <span style="font-size:18px">2016</span>
+            </li>
+          </ul>
+        </div>
+        <ul class="weekdays">
+          <li>Mon</li>
+          <li>Tue</li>
+          <li>Wed</li>
+          <li>Thr</li>
+          <li>Fri</li>
+          <li>Sat</li>
+          <li>Sun</li>
+        </ul>
+        <ul class="days">
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+          <li>5</li>
+          <li>6</li>
+          <li>7</li>
+          <li><span class="active">8</span></li>
+          <li>9</li>
+          <li>10</li>
+          <li>11</li>
+          <li>12</li>
+          <li>13</li>
+          <li>14</li>
+          <li>15</li>
+          <li>16</li>
+          <li>17</li>
+          <li>18</li>
+          <li>19</li>
+          <li>20</li>
+          <li>21</li>
+          <li>22</li>
+          <li>23</li>
+          <li>24</li>
+          <li>25</li>
+          <li>26</li>
+          <li>27</li>
+          <li>28</li>
+          <li>29</li>
+          <li>30</li>
+          <li>31</li>
+        </ul>
+<img src="chart.jpg">
+    </div>
+    <div id="MyPals" class="tabcontent">
+      <h1> My Pals </h1>
+
+    <button onclick="makeid()">MyCode</button>
+    <p id="code"> </p>
+      <script>
+      function makeid() {
+        var text = "";
+        var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+
+        for (var i = 0; i < 5; i++)
+        text += possible.charAt(Math.floor(Math.random() * possible.length));
+        console.log(text)
+        document.getElementById("code").innerHTML = text;
+        return text;
+        }
+      </script>
+
+
+      <button onclick="myFunction()">Julia</button>
+      <p id="demo"></p>
+      <script>
+      function myFunction() {
+        document.getElementById("demo").innerHTML = "Next Period: 14 days";
+      }
+      </script>
+      <button onclick="myFunction1()">Lucy</button>
+      <p id="demo1"></p>
+      <script>
+      function myFunction1() {
+        document.getElementById("demo1h").innerHTML = "Next Period: 4 days";
+      }
+      </script>
+
+      </div>
+    <div id="MyGroups" class="tabcontent">
+      <h1> My Groups </h1>
+      <p> bonjour </p>
+    </div>
+  </body>
+</html>
